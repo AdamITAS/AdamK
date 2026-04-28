@@ -138,7 +138,6 @@ nav{
   position:relative;overflow:hidden;
 }
 
-/* ANIMATED MESH GRADIENT */
 .hero-mesh{
   position:absolute;inset:-20%;z-index:0;
   background:
@@ -162,7 +161,6 @@ nav{
   background-repeat:repeat;background-size:200px;
 }
 
-/* GRID OVERLAY */
 .hero-grid-bg{
   position:absolute;inset:0;z-index:1;pointer-events:none;
   background-image:
@@ -181,8 +179,6 @@ nav{
   grid-template-columns:1fr auto;
   gap:4rem;align-items:end;
 }
-
-.hero-left{}
 
 .hero-tag{
   display:inline-flex;align-items:center;gap:.55rem;
@@ -212,13 +208,7 @@ nav{
 .hero-h1 .line:nth-child(3) .line-inner{animation-delay:.38s;}
 @keyframes lineUp{to{transform:translateY(0);}}
 
-.hero-h1 .acc{color:var(--acc);}
-.hero-h1 .light{color:var(--quiet);font-weight:300;}
-
-/* GLOW on accent word */
-.hero-h1 .acc{
-  text-shadow:0 0 40px rgba(232,67,16,.2), 0 0 80px rgba(232,67,16,.08);
-}
+.hero-h1 .acc{color:var(--acc);text-shadow:0 0 40px rgba(232,67,16,.2), 0 0 80px rgba(232,67,16,.08);}
 
 .hero-p{
   font-family:var(--body);font-size:.97rem;font-weight:300;
@@ -232,10 +222,7 @@ nav{
   opacity:0;animation:up .65s ease .62s forwards;
 }
 
-/* MAGNETIC BUTTON */
-.mag-wrap{
-  position:relative;display:inline-block;
-}
+.mag-wrap{position:relative;display:inline-block;}
 .btn{
   display:inline-block;font-family:var(--body);font-size:.8rem;font-weight:500;
   letter-spacing:.02em;padding:.75rem 1.55rem;border-radius:6px;
@@ -276,9 +263,7 @@ nav{
 }
 .hstat:first-child{padding-left:0;}
 .hstat:last-child{border-right:none;}
-.hstat-n{
-  font-family:var(--head);font-size:1.6rem;font-weight:700;letter-spacing:-.04em;color:var(--ink);line-height:1;
-}
+.hstat-n{font-family:var(--head);font-size:1.6rem;font-weight:700;letter-spacing:-.04em;color:var(--ink);line-height:1;}
 .hstat-l{font-size:.68rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--quiet);margin-top:.3rem;}
 
 /* ── ABOUT ────────────────── */
@@ -296,20 +281,11 @@ nav{
 .about-grid{display:grid;grid-template-columns:1fr 1.7fr;gap:7rem;align-items:start;}
 .about-sticky{position:sticky;top:calc(var(--nav) + 2rem);}
 
-/* PHOTO PLACEHOLDER */
 .about-photo{
   width:100%;aspect-ratio:1;border-radius:12px;overflow:hidden;
   background:var(--cream);border:1px solid var(--border);
   margin-bottom:2rem;position:relative;
 }
-.about-photo-inner{
-  width:100%;height:100%;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
-  background:linear-gradient(135deg,var(--cream) 0%,var(--cream2) 100%);
-}
-.about-photo-inner .photo-icon{font-size:2.5rem;opacity:.3;}
-.about-photo-inner .photo-text{font-size:.72rem;color:var(--quiet);letter-spacing:.08em;text-transform:uppercase;}
-.about-photo-inner .photo-hint{font-size:.62rem;color:var(--border);margin-top:.2rem;}
 
 .about-p{font-size:.92rem;font-weight:300;color:var(--muted);line-height:1.85;margin-bottom:1.3rem;}
 
@@ -363,7 +339,6 @@ nav{
 .now-item{display:flex;flex-direction:column;gap:.3rem;}
 .now-label{font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--quiet);}
 .now-value{font-size:.92rem;color:var(--ink2);font-weight:400;line-height:1.6;}
-.now-value .emoji{margin-right:.35rem;}
 
 /* ── PROJECTS ─────────────── */
 #projects{
@@ -386,7 +361,6 @@ nav{
   gap:1.5rem;
 }
 
-/* project card */
 .pcard{
   background:var(--dark2);
   border:1px solid var(--dborder);
@@ -403,7 +377,6 @@ nav{
   box-shadow:0 20px 60px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.06);
 }
 
-/* browser chrome */
 .browser{border-bottom:1px solid rgba(255,255,255,.06);}
 .browser-bar{
   background:var(--dark3);
@@ -421,7 +394,6 @@ nav{
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:.02em;
 }
 
-/* iframe preview */
 .preview-outer{
   position:relative;overflow:hidden;background:#1a1a1a;height:180px;
 }
@@ -439,7 +411,6 @@ nav{
 .preview-coming span:first-child{font-size:1.5rem;}
 .preview-coming span:last-child{font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);}
 
-/* card body */
 .pcard-body{padding:1.4rem 1.5rem 1.5rem;display:flex;flex-direction:column;flex:1;}
 
 .pcard-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;}
@@ -462,7 +433,6 @@ nav{
 
 .pcard-foot{border-top:1px solid rgba(255,255,255,.06);padding-top:1.1rem;margin-top:auto;}
 
-/* THE LINK BOX */
 .plink-box{
   display:flex;align-items:center;justify-content:space-between;gap:.75rem;
   background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
@@ -485,7 +455,6 @@ nav{
 .plink-url{font-size:.72rem;color:rgba(255,255,255,.45);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .18s;}
 .plink-arr{font-size:.85rem;color:rgba(255,255,255,.25);transition:all .25s cubic-bezier(.22,1,.36,1);flex-shrink:0;}
 
-/* disabled link box */
 .plink-box-disabled{
   display:flex;align-items:center;justify-content:center;gap:.5rem;
   background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
@@ -520,7 +489,6 @@ nav{
 .cval{font-size:.88rem;color:var(--ink2);font-weight:300;word-break:break-all;}
 .carr{font-size:.9rem;color:var(--quiet);opacity:.4;transition:all .18s;flex-shrink:0;}
 
-/* SOCIAL ROW */
 .social-row{
   display:flex;gap:.7rem;margin-top:1.5rem;
 }
@@ -557,13 +525,6 @@ footer{
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);}
 .reveal.in{opacity:1;transform:none;}
 
-/* STAGGER CHILDREN */
-.stagger-children .reveal:nth-child(1){transition-delay:.05s;}
-.stagger-children .reveal:nth-child(2){transition-delay:.12s;}
-.stagger-children .reveal:nth-child(3){transition-delay:.19s;}
-.stagger-children .reveal:nth-child(4){transition-delay:.26s;}
-
-/* ── RESPONSIVE ───────────── */
 @media(max-width:900px){
   .nav-links,nav>.lang-btn{display:none;}
   .ham{display:flex;}
@@ -632,7 +593,7 @@ footer{
     <div class="hero-left">
       <div class="hero-tag">
         <span class="hero-tag-dot"></span>
-        <span data-it="Developer & Builder — Milano" data-en="Developer & Builder — Milan">Developer & Builder — Italy</span>
+        <span data-it="Developer & Builder — Italia" data-en="Developer & Builder — Italy">Developer & Builder — Italia</span>
       </div>
 
       <h1 class="hero-h1">
@@ -642,9 +603,9 @@ footer{
       </h1>
 
       <p class="hero-p"
-        data-it="Studio in ambito socio-sanitario e costruisco servizi digitali. Da circa 5 anni sperimento con il web; dal 2025 sviluppo progetti in modo autonomo, partendo da problemi reali e trasformandoli in prodotti utilizzabili."
-        data-en="I study in the healthcare field and build digital services. For about 5 years I've been experimenting with the web; since 2025 I develop projects independently, starting from real problems and turning them into usable products.">
-        Studio in ambito socio-sanitario e costruisco servizi digitali. Da circa 5 anni sperimento con il web; dal 2025 sviluppo progetti in modo autonomo, partendo da problemi reali e trasformandoli in prodotti utilizzabili.
+        data-it="Studio e costruisco cose sul web. Ho iniziato per gioco circa 5 anni fa, ora lo faccio sul serio: prendo un problema, ci lavoro sopra, e lo trasformo in qualcosa che funziona davvero."
+        data-en="I study and build things on the web. Started as a hobby about 5 years ago, now I do it for real: I take a problem, work on it, and turn it into something that actually works.">
+        Studio e costruisco cose sul web. Ho iniziato per gioco circa 5 anni fa, ora lo faccio sul serio: prendo un problema, ci lavoro sopra, e lo trasformo in qualcosa che funziona davvero.
       </p>
 
       <div class="hero-btns">
@@ -659,12 +620,12 @@ footer{
 
     <div class="hero-right">
       <div class="hmeta">
-        <span class="hmeta-l" data-it="Specializzazione" data-en="Specialization">Specializzazione</span>
+        <span class="hmeta-l" data-it="Cosa faccio" data-en="What I do">Cosa faccio</span>
         <span class="hmeta-v" data-it="Web · SaaS · Prodotto digitale" data-en="Web · SaaS · Digital product">Web · SaaS · Prodotto digitale</span>
       </div>
       <div class="hmeta">
-        <span class="hmeta-l" data-it="Approccio" data-en="Approach">Approccio</span>
-        <span class="hmeta-v" data-it="Problema reale → soluzione concreta" data-en="Real problem → concrete solution">Problema reale → soluzione concreta</span>
+        <span class="hmeta-l" data-it="Come lavoro" data-en="How I work">Come lavoro</span>
+        <span class="hmeta-v" data-it="Problema → soluzione" data-en="Problem → solution">Problema → soluzione</span>
       </div>
       <div class="hmeta">
         <span class="hmeta-l" data-it="Da quando" data-en="Since">Da quando</span>
@@ -675,11 +636,11 @@ footer{
     <div class="hero-stats">
       <div class="hstat">
         <div class="hstat-n" data-count="5" data-suffix="+">0</div>
-        <div class="hstat-l" data-it="Anni di esperienza" data-en="Years of experience">Anni di esperienza</div>
+        <div class="hstat-l" data-it="Anni" data-en="Years">Anni</div>
       </div>
       <div class="hstat">
         <div class="hstat-n" data-count="3" data-suffix="">0</div>
-        <div class="hstat-l" data-it="Progetti attivi" data-en="Active projects">Progetti attivi</div>
+        <div class="hstat-l" data-it="Progetti" data-en="Projects">Progetti</div>
       </div>
       <div class="hstat">
         <div class="hstat-n" data-count="2025" data-suffix="" data-is-year="true">0</div>
@@ -699,21 +660,21 @@ footer{
         <p class="eyebrow" data-it="Chi sono" data-en="About me">Chi sono</p>
         <h2 class="sh2" data-it="Dalla teoria<br>alla pratica." data-en="From theory<br>to practice.">Dalla teoria<br>alla pratica.</h2>
 
-        <!-- PHOTO PLACEHOLDER -->
-     <div class="about-photo">
-  <img src="Adam.jpeg" alt="Adam Khayari" style="width:100%;height:100%;object-fit:cover;">
-</div>
+        <div class="about-photo">
+          <img src="Adam.jpeg" alt="Adam Khayari" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
 
-      <div class="reveal stagger-children" style="transition-delay:.12s">
+      <div class="reveal" style="transition-delay:.12s">
         <p class="about-p"
-          data-it="Sono Adam Khayari. Ho iniziato a programmare per curiosita circa 5 anni fa, partendo da piccoli progetti e sperimentazioni. Nel 2025 ho cambiato passo: costruire idee mie, testarle e trasformarle in prodotti digitali concreti. Non mi interessano solo le tecnologie — mi interessa risolvere problemi reali per persone reali."
-          data-en="I'm Adam Khayari. I started programming out of curiosity about 5 years ago, from small projects and experiments. In 2025 I shifted pace: building my own ideas, testing them, and turning them into concrete digital products. It's not just about technologies — it's about solving real problems for real people.">
-          Sono Adam Khayari. Ho iniziato a programmare per curiosita circa 5 anni fa, partendo da piccoli progetti e sperimentazioni. Nel 2025 ho cambiato passo: costruire idee mie, testarle e trasformarle in prodotti digitali concreti. Non mi interessano solo le tecnologie — mi interessa risolvere problemi reali per persone reali.
+          data-it="Mi chiamo Adam, ho 20 anni e studio socio-sanitario. La programmazione è entrata per caso: ho iniziato a giocherellare con HTML e CSS per curiosità, e poi non mi sono più fermato. Da qualche mese ho deciso di prenderla sul serio — non solo imparare, ma costruire cose che servono davvero."
+          data-en="I'm Adam, 20 years old, studying healthcare. Programming came by accident: I started playing around with HTML and CSS out of curiosity, and never stopped. A few months ago I decided to get serious — not just learning, but building things that actually matter.">
+          Mi chiamo Adam, ho 20 anni e studio socio-sanitario. La programmazione è entrata per caso: ho iniziato a giocherellare con HTML e CSS per curiosità, e poi non mi sono più fermato. Da qualche mese ho deciso di prenderla sul serio — non solo imparare, ma costruire cose che servono davvero.
         </p>
         <p class="about-p"
-          data-it="Il mio percorso socio-sanitario mi ha insegnato a osservare i problemi reali delle persone, non solo quelli tecnici. Lavorare in contesti educativi mi ha mostrato quanto le persone siano al centro di ogni progetto. Oggi uso questa prospettiva per creare strumenti web semplici, pratici e pensati per essere usati davvero, non solo per stare in un portfolio."
-          data-en="My healthcare background taught me to observe real people's problems, not just technical ones. Working in educational contexts showed me how people are at the center of every project. Today I use this perspective to create simple, practical web tools designed to actually be used — not just to sit in a portfolio.">
-          Il mio percorso socio-sanitario mi ha insegnato a osservare i problemi reali delle persone, non solo quelli tecnici. Lavorare in contesti educativi mi ha mostrato quanto le persone siano al centro di ogni progetto. Oggi uso questa prospettiva per creare strumenti web semplici, pratici e pensati per essere usati davvero, non solo per stare in un portfolio.
+          data-it="Lavoro nel mondo educativo e questo mi ha cambiato il modo di vedere le cose. Quando costruisci un'app, non stai scrivendo codice per te stesso: stai risolvendo un problema per qualcun altro. E questa è la parte che mi piace di più."
+          data-en="I work in education and it changed how I see things. When you build an app, you're not writing code for yourself: you're solving a problem for someone else. And that's the part I enjoy the most.">
+          Lavoro nel mondo educativo e questo mi ha cambiato il modo di vedere le cose. Quando costruisci un'app, non stai scrivendo codice per te stesso: stai risolvendo un problema per qualcun altro. E questa è la parte che mi piace di più.
         </p>
 
         <div class="stats">
@@ -748,33 +709,33 @@ footer{
 <section id="now">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow" data-it="Cosa sto facendo" data-en="What I'm doing">Cosa sto facendo</p>
+      <p class="eyebrow" data-it="Cosa sto facendo" data-en="What I'm up to">Cosa sto facendo</p>
       <h2 class="sh2" style="margin-bottom:2rem" data-it="Adesso." data-en="Now.">Adesso.</h2>
     </div>
     <div class="now-card reveal" style="transition-delay:.1s">
       <div class="now-grid">
         <div class="now-item">
           <span class="now-label" data-it="Studiando" data-en="Studying">Studiando</span>
-          <span class="now-value" data-it="Ambito socio-sanitario, React avanzato e architetture SaaS" data-en="Healthcare field, advanced React and SaaS architectures">
-            <span class="emoji">&#128218;</span>Ambito socio-sanitario-studente, programmazione da casa.
+          <span class="now-value" data-it="📚 Ambito socio-sanitario, programmazione da autodidatta" data-en="📚 Healthcare studies, self-taught programming">
+            📚 Ambito socio-sanitario, programmazione da autodidatta
           </span>
         </div>
         <div class="now-item">
           <span class="now-label" data-it="Costruendo" data-en="Building">Costruendo</span>
-          <span class="now-value" data-it="PresenzaOK — gestionale per cooperative educative" data-en="PresenzaOK — management tool for educational cooperatives">
-            <span class="emoji">&#128736;</span>PresenzaOK — gestionale per cooperative educative- DEMO
+          <span class="now-value" data-it="🔧 PresenzaOK — gestionale per cooperative educative (demo)" data-en="🔧 PresenzaOK — management tool for educational cooperatives (demo)">
+            🔧 PresenzaOK — gestionale per cooperative educative (demo)
           </span>
         </div>
         <div class="now-item">
-          <span class="now-label" data-it="Pensiero" data-en="My tought">Pensiero</span>
-          <span class="now-value" data-it="&quot;The Mom Test&quot; di Rob Fitzpatrick" data-en="&quot;The Mom Test&quot; by Rob Fitzpatrick">
-            <span class="emoji">&#128214;</span> Approfittare dei momenti per creare qualcosa di UTILE
+          <span class="now-label" data-it="Pensiero" data-en="Thought">Pensiero</span>
+          <span class="now-value" data-it="💡 Ogni momento libero è un momento per costruire qualcosa di utile" data-en="💡 Every free moment is a chance to build something useful">
+            💡 Ogni momento libero è un momento per costruire qualcosa di utile
           </span>
         </div>
         <div class="now-item">
-          <span class="now-label" data-it="Focus" data-en="Focus">Focus</span>
-          <span class="now-value" data-it="Lanciare il primo prodotto SaaS con utenti reali" data-en="Launching the first SaaS product with real users">
-            <span class="emoji">&#127919;</span>Lanciare il primo prodotto SaaS con utenti reali
+          <span class="now-label" data-it="Obiettivo" data-en="Goal">Obiettivo</span>
+          <span class="now-value" data-it="🎯 Lanciare il primo prodotto SaaS con utenti veri" data-en="🎯 Launch the first SaaS product with real users">
+            🎯 Lanciare il primo prodotto SaaS con utenti veri
           </span>
         </div>
       </div>
@@ -814,9 +775,9 @@ footer{
           </div>
           <div class="pname">Sintekno 3DSnap</div>
           <div class="pdesc"
-            data-it="Piattaforma web per visualizzazione 3D interattiva direttamente dal browser. Importa modelli, anima scene con keyframe, esporta video — senza installazioni."
-            data-en="Web platform for interactive 3D visualization directly from the browser. Import models, animate scenes with keyframes, export video — no installation.">
-            Piattaforma web per visualizzazione 3D interattiva direttamente dal browser. Importa modelli, anima scene con keyframe, esporta video — senza installazioni.
+            data-it="Visualizza modelli 3D direttamente dal browser. Importa, anima con keyframe, esporta video — niente da installare."
+            data-en="View 3D models straight from your browser. Import, animate with keyframes, export video — nothing to install.">
+            Visualizza modelli 3D direttamente dal browser. Importa, anima con keyframe, esporta video — niente da installare.
           </div>
           <div class="ptags">
             <span class="ptag">Three.js</span><span class="ptag">React</span><span class="ptag">WebGL</span><span class="ptag">Web Codecs</span>
@@ -851,9 +812,9 @@ footer{
           </div>
           <div class="pname">Pizzeria Al Gambero</div>
           <div class="pdesc"
-            data-it="Concept di sito moderno per una pizzeria locale. Mobile-first, con menu, prenotazioni, Google Maps e contatti rapidi."
-            data-en="Modern website concept for a local pizzeria. Mobile-first, with menu, reservations, Google Maps and quick contact.">
-            Concept di sito moderno per una pizzeria locale. Mobile-first, con menu, prenotazioni, Google Maps e contatti rapidi.
+            data-it="Sito per una pizzeria di Milano. Menu digitale, prenotazioni, mappa e contatti — pensato per mobile."
+            data-en="Website for a pizzeria in Milan. Digital menu, reservations, map and contacts — designed for mobile.">
+            Sito per una pizzeria di Milano. Menu digitale, prenotazioni, mappa e contatti — pensato per mobile.
           </div>
           <div class="ptags">
             <span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span><span class="ptag">Mobile-first</span>
@@ -891,9 +852,9 @@ footer{
           </div>
           <div class="pname">PresenzaOK</div>
           <div class="pdesc"
-            data-it="Gestionale in sviluppo per cooperative educative. Centralizza assenze, ritardi e comunicazioni tra famiglie, educatori e coordinatori, riducendo messaggi sparsi e confusione organizzativa."
-            data-en="Management tool in development for educational cooperatives. Centralizes absences, delays and communications between families, educators and coordinators, reducing scattered messages and organizational confusion.">
-            Gestionale in sviluppo per cooperative educative. Centralizza assenze, ritardi e comunicazioni tra famiglie, educatori e coordinatori, riducendo messaggi sparsi e confusione organizzativa.
+            data-it="App per gestire presenze e comunicazioni nelle cooperative educative. Niente più fogli Excel e messaggi sparsi su WhatsApp."
+            data-en="App to manage attendance and communications in educational cooperatives. No more Excel sheets and scattered WhatsApp messages.">
+            App per gestire presenze e comunicazioni nelle cooperative educative. Niente più fogli Excel e messaggi sparsi su WhatsApp.
           </div>
           <div class="ptags">
             <span class="ptag">React</span><span class="ptag">Supabase</span><span class="ptag">SaaS</span><span class="ptag">Dashboard</span>
@@ -922,12 +883,11 @@ footer{
           <span data-it="Hai un progetto<br>in mente?" data-en="Have a project<br>in mind?">Hai un progetto<br>in mente?</span>
         </h2>
         <p class="contact-p"
-          data-it="Scrivimi per collaborazioni, idee, feedback o progetti da sviluppare. Rispondo appena possibile."
-          data-en="Write me for collaborations, ideas, feedback or projects to develop. I reply as soon as possible.">
-          Scrivimi per collaborazioni, idee, feedback o progetti da sviluppare. Rispondo appena possibile.
+          data-it="Se hai un'idea, un progetto, o vuoi semplicemente fare due chiacchiere — scrivimi."
+          data-en="If you have an idea, a project, or just want to chat — write me.">
+          Se hai un'idea, un progetto, o vuoi semplicemente fare due chiacchiere — scrivimi.
         </p>
 
-        <!-- SOCIAL LINKS -->
         <div class="social-row">
           <a href="https://github.com/AdamITAS" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
             <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -970,9 +930,7 @@ footer{
 /* ── CUSTOM CURSOR ─────── */
 const dot=document.getElementById('cDot'),ring=document.getElementById('cRing');
 let mx=0,my=0,cx=0,cy=0;
-
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
-
 function animCursor(){
   cx+=(mx-cx)*.15;cy+=(my-cy)*.15;
   dot.style.left=mx+'px';dot.style.top=my+'px';
@@ -980,8 +938,6 @@ function animCursor(){
   requestAnimationFrame(animCursor);
 }
 animCursor();
-
-// hover state
 document.querySelectorAll('a,button,.btn,.social-link,.skill,.pcard,.stat,.crow').forEach(el=>{
   el.addEventListener('mouseenter',()=>{dot.classList.add('hover');ring.classList.add('hover');});
   el.addEventListener('mouseleave',()=>{dot.classList.remove('hover');ring.classList.remove('hover');});
@@ -1029,7 +985,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
 const io=new IntersectionObserver(en=>en.forEach(e=>{
   if(e.isIntersecting){
     e.target.classList.add('in');
-    // trigger counters inside if any
     e.target.querySelectorAll('[data-count]').forEach(el=>animateCounter(el));
   }
 }),{threshold:.08});
@@ -1044,27 +999,17 @@ function animateCounter(el){
   const isYear=el.dataset.isYear==='true';
   const duration=1800;
   const start=performance.now();
-
   function tick(now){
     const elapsed=now-start;
     const progress=Math.min(elapsed/duration,1);
-    // ease out cubic
     const ease=1-Math.pow(1-progress,3);
-
-    if(isYear){
-      const val=Math.round(ease*target);
-      el.textContent=val;
-    }else{
-      const val=Math.round(ease*target);
-      el.textContent=val+suffix;
-    }
-
+    const val=Math.round(ease*target);
+    el.textContent=isYear?val:val+suffix;
     if(progress<1)requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);
 }
 
-// also animate hero stats (they're not inside a .reveal)
 const heroStatsIO=new IntersectionObserver(en=>en.forEach(e=>{
   if(e.isIntersecting){
     e.target.querySelectorAll('[data-count]').forEach(el=>animateCounter(el));
@@ -1083,9 +1028,7 @@ document.querySelectorAll('.mag-wrap').forEach(wrap=>{
     const y=e.clientY-rect.top-rect.height/2;
     btn.style.transform=`translate(${x*.2}px,${y*.2}px)`;
   });
-  wrap.addEventListener('mouseleave',()=>{
-    btn.style.transform='';
-  });
+  wrap.addEventListener('mouseleave',()=>{btn.style.transform='';});
 });
 
 /* ── IFRAME SCALE ───────── */
@@ -1111,9 +1054,7 @@ document.querySelectorAll('.pcard').forEach(card=>{
     const y=(e.clientY-rect.top)/rect.height-.5;
     card.style.transform=`translateY(-6px) rotateY(${x*6}deg) rotateX(${-y*6}deg)`;
   });
-  card.addEventListener('mouseleave',()=>{
-    card.style.transform='';
-  });
+  card.addEventListener('mouseleave',()=>{card.style.transform='';});
 });
 </script>
 </body>
